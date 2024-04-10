@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 100%;
+  padding: 1em;
+}
+.right {
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navbar li {
+  padding: 1em;
+}
