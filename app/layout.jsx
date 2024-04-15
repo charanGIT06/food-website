@@ -1,6 +1,5 @@
-import Header from "@/components/NavBar";
-import { Providers } from "./providers";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata = {
   title: "Food Website",
@@ -11,9 +10,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        <Header />
-        <Providers>{children}</Providers>
-      </body>
+        <Navbar />
+        {children}
+        </body>
     </html>
   );
 }
