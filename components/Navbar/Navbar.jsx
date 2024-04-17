@@ -11,11 +11,11 @@ export default function Navbar() {
       </div>
       <div className='right w-1/2 space-around flex flex-row'>
         <ul className='list-none w-full flex flex-row justify-end'>
-          {["/about", "/menu", "/reserve", "/profile"].map((link) => {
+          {["/feed", "/search", "/posts", "/profile"].map((link) => {
             return (
-              <li className='px-5 py-4 me-1 rounded-full hover:bg-sky-200 active:ring-2'>
-                <NavLink as='li' path={link}>{link.substring(1, 2).toUpperCase() + link.substring(2)}</NavLink>
-              </li>
+              <NavLink path={link}>
+                {link.substring(1, 2).toUpperCase() + link.substring(2)}
+              </NavLink>
             );
           })}
         </ul>
